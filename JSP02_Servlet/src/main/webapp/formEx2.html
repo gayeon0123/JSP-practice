@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 
+		회원가입 폼 만들기
+		(아이디, 비밀번호, 이름, 전화번호,
+		 취미[checkbox], 사는지역[select])
+		 
+		 폼 만든 후에 /form/data2 으로 데이터 전송하기
+	 -->
+	 
+	 <h2>회원 가입 폼</h2>
+	 
+	 <form action="/JSP02/form/data2" method="post">
+	 
+	 아이디 : <input type="text" name="id"><br>
+	 비밀번호 : <input type="password" name="pw"><br>
+	 이름 : <input type="text" name="name"><br>
+	 전화번호 : <input type="text" name="tel" maxlength="13"><br>
+	 
+	 취미 : <input type="checkbox" name="hobby" value="요리">요리
+	 	   <input type="checkbox" name="hobby" value="운동">운동
+	 	   <input type="checkbox" name="hobby" value="영화감상">영화감상
+	 	   <input type="checkbox" name="hobby" value="게임">게임
+	 	   <br>
+	 	   
+	 사는지역 : <select name="area">
+	 
+	 		  <option value="seoul">서울</option>
+	 		  <option value="daejeon">대전</option>
+			  <option value="daegu">대구</option>
+			  <option value="busan">부산</option>
+	 
+	 		  </select>
+	 		  <br>
+	 		  
+	 <input type="submit" value="회원정보 전송">
+	 
+	 </form>
+	 
+</body>
+</html>
