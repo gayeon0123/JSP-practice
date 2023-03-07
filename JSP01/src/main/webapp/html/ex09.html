@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2>form 태그</h2>
+	
+	<!-- 
+		name : form의 이름지정. 서버로 제출되는 폼데이터를 참조하기 위해 사용하거나,
+				자바스크립트에서 폼 요소를 참조하기 위해 사용
+		action : form이 전송되는 서버쪽 url 주소 입력
+		method : 전송방법을 설정. get / post 방식
+		
+		input 태그 : 사용자로부터 입력을 받을 수 있는 입력필드를 정의
+		type : 입력형식 지정
+		name : 서버로 전송되는 데이터 이동
+		submit : 서버로 데이터를 전송하는 제출 버튼
+		reset : 초기화 버튼
+		value : 버튼에 표시할 내용
+	 -->
+	
+	<form name="loginForm" action="jspPage.jsp" method="get">
+	
+		아이디 : <input type="text" name="id"><br>
+		비밀번호 : <input type="password" name="pw"><br>
+		
+		<input type="submit" value="로그인">
+	
+	</form>
+	
+	<h2>학생정보 입력 form</h2>
+	
+	<form action="#" method="post">
+	
+		학번 : <input type="number" name="studentID"><br>
+		이름 : <input type="text" name="name"><br>
+		
+		자기소개 <br> <textarea rows="5" cols="25"></textarea><br>
+		
+		<input type="submit" value="학생정보 전송">
+		
+		&nbsp;&nbsp;
+		
+		<input type="reset" value="초기화">
+	
+	</form>
+	
+</body>
+</html>

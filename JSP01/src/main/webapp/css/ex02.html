@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+	h2{
+	color : darkorange;
+	}
+</style>
+
+<!-- 
+	link 태그 : 해당문서와 외부 소스사이의 관계를 정의할때 사용
+			 : 요소는 빈태그이며, 속성만을 포함한다
+			 : head 태그 내부에만 위치할 수 있으며, 그 갯수에는 제한이 없다
+			 : 주로 외부 스타일시트를 연결할때 사용
+ -->
+ 
+<link type="text/css" rel="stykesheet" href="style.css">
+ 
+</head>
+<body>
+
+	<h3 style="color:blue;font-size:50px">인라인 스타일시트</h3>
+	<!-- html 명령어 라인 내부에 스타일을 정의하는 것 -->
+	
+	<hr>
+	
+	<h2>내부 스타일시트</h2>
+	<!-- 문서 상단 head 태그 안에 <style> 태그를 사용하여 스타일을 정의하는 것 -->
+	
+	<hr>
+	
+	<h1>외부 스타일시트</h1>
+	<!-- 
+		html 문서와 별도로 확장자가 css인 파일을 생성 후
+		문서 상단에 <link> 태그로 파일을 불러와서 스타일을 정의하는 것
+	 -->
+	
+</body>
+</html>

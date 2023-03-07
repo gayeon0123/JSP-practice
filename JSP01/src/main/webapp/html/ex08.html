@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2>이미지 태그 - img</h2>
+	
+	<!-- 
+		절대경로 : /를 붙이고 contextPath 를 표기하여야 한다
+	 -->
+	 
+	<img src="/JSP01/img/loopy.PNG" alt="루피" width="400" height="300">
+
+	<hr>
+	
+	<!-- 
+		상대경로 : 현재 내 위치부터 찾아간다
+		같은 경로에 있을때 : src="loopy.PNG"
+		하위 경로에 있을떄 : src="img/loopy.PNG"
+		상위 경로에 있을때 : src="i../loopy.PNG"
+	-->
+	
+	<img src="../img/loopy.PNG" alt="루피" width="400" height="300">
+	
+</body>
+</html>

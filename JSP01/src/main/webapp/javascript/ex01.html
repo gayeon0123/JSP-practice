@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 
+		자바스크립트 소스코드가 짧은경우 웹 문서에서
+		자바스크립트를 실행할 위치에 바로 코드를 작성할 수 있다
+		<script>와 </script> 태그 사이에
+		실행할 자바스크립트 소스를 작성한다
+	 -->
+	 
+	 <script>
+	 	alert('Hello Javascript!');
+	 	
+	 	// alert 함수 : 사용자에게 중요한 내용이나
+	 	// 			   경고창을 띄워줄때 사용하는 함수
+	 	//           : 여러가지 창 중에서 가장 많이 쓰이는 기본적인 팝업창이다
+	 	
+	 	var result = confirm('자바스크립트 시작할까요?');
+	 	// var : 변수 선언 키워드 (타입x)
+	 	
+	 	// confirm 함수 : 사용자에게 true / false 값을
+	 	// 				 리턴 받을 수 있는 팝업창을 띄워주는 함수
+	 	
+	 	if(result){
+	 		alert('자바스크립트 시작하겠습니다!');
+	 	}else{
+	 		alert('다음에 시작하겠습니다!')
+	 	}
+	 	
+	 	var name = prompt('당신의 이름은?');
+	 	// prompt 함수 : 간단한 입력을 받을 수 있는 함수
+	 	
+	 	document.write('<h2>반갑습니다~!' + name + '님!</h2>');
+	 	
+	 </script>
+	 
+</body>
+</html>

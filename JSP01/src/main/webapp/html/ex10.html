@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2>체크박스 버튼 : 다중 선택</h2>
+	
+	<form action="#">
+	
+		<!-- value의 초기값 설정 -->
+		이름 입력: <input type="text" name="name" value="홍길동"><br>
+		
+		<!-- value의 값 설정 -->
+		<input type="checkbox" name="color" value="blue">Blue<br>
+		<input type="checkbox" name="color" value="red">Red<br>
+		<input type="checkbox" name="color" value="orange">Orange<br>
+	
+		<!-- value의 버튼 텍스트 정의 -->
+		<input type="submit" value="전송">
+		
+	</form>
+	
+	<!-- 
+		HTML value 속성 : input 태그에서 보조적인 속성에 사용된다
+		값 설정, 버튼 텍스트 정의, 초기값 설정에 사용된다
+	 -->
+	 
+	 <h2>라디오 버튼 : 단일 선택</h2>
+	 
+	 <form action="#">
+	 	
+	 	<input type="radio" name="fruit" value="apple">사과<br>
+	 	<input type="radio" name="fruit" value="strawberry">딸기<br>
+	 	<input type="radio" name="fruit" value="banana">바나나<br>
+	 	
+	 	<input type="submit" value="전송">
+	 	
+	 </form>
+	 
+	 <h2>select 태그 : 드롭다운 목록</h2>
+	 
+	 <form action="#">
+	 
+	 	<select name="coffee">
+	 		<option value="americano">아메리카노</option>
+	 		<option value="Latte">라떼</option>
+	 		<option value="espresso">에스프레소</option>
+	 	</select>
+	 	
+	 	<input type="submit" value="전송">
+	 
+	 </form>
+	 
+</body>
+</html>

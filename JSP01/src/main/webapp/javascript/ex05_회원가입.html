@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+	
+		function joinFormCheck(){
+			
+			var id = document.joinForm.id.value;
+			var pw = document.joinForm.pw.value;
+			var pwCheck = document.joinForm.pwCheck.value;
+			
+			if(id == null || id == "") {
+				alert('아이디는 필수사항 입니다.');
+				document.joinForm.id.focus(); // focus() : 해당 요소에 커서 이동
+				return; // 함수 종료
+			}
+			
+			if(pw == null || pw == ""){
+				alert('비밀번호는 필수사항 입니다.')
+				document.joinForm.pw.focus();
+				return;
+			}
+			
+			if(pw != pwCheck){
+				alert('입력한 비밀번호가 일치하지 않습니다!');
+				document.joinForm.pw.focus();
+				return;
+			}
+			
+			document.joinForm.submit();
+			// 자바스크립트에서 유효성 검사 후 서버로 데이터를 전송
+			
+		}
+		
+	</script>
+	
+	<!-- 
+		회원가입 폼 만들기
+		(아이디, 비밀번호, 비밀번호 확인, 이름, 전화번호, 주소)
+	 -->
+	 
+	 <h2>회원가입 폼</h2>
+	 
+	 <form name="joinForm" action="#">
+	 
+	 	아이디 : <input type="text" name="id"><br>
+	 	비밀번호 : <input type="password" name="pw"><br>
+	 	비밀번호 확인 : <input type="password" name="pwCheck"><br>
+	 	
+	 	이름 : <input type="text" name="name"><br>
+	 	전화번호 : <input type="text" name="tel"><br>
+	 	주소 : <input type="text" name="address"><br>
+	 	
+	 	<input type="button" onclick="joinFormCheck()" value="회원가입">
+	 
+	 </form>
+	 
+</body>
+</html>
