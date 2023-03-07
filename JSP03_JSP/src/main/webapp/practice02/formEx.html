@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 
+		form 태그로 학생정보 입력폼 만들기
+		[학번, 이름, 전화번호, 전공(radio), 동아리(checkbox), 사는지역(select)]
+		requestEx.jsp 로 전송하기
+	 -->
+	 
+	 <h2>학생정보 입력 폼</h2>
+	 
+	 <form action="requestEx.jsp" method="post">
+	 
+	 학번 : <input type="String" name="studentID"><br>
+	 이름 : <input type="String" name="name"><br>
+	 전화번호 : <input type="String" name="tel"><br>
+	 
+	 전공 : <input type="radio" name="major" value="컴퓨터">컴퓨터
+	 	   <input type="radio" name="major" value="경영">경영
+	 	   <input type="radio" name="major" value="경제">경제
+	 	   <input type="radio" name="major" value="생명">생명
+	 	   <br>
+	 
+	 동아리 : <input type="checkbox" name="circle" value="사진">사진
+	 		<input type="checkbox" name="circle" value="축구">축구
+	 		<input type="checkbox" name="circle" value="독서">독서
+	 		<input type="checkbox" name="circle" value="밴드">밴드
+	 		<br>
+	 		
+	 사는지역 : <select name="area">
+	 		
+	 		  	<option value="seoul">서울</option>
+	 		  	<option value="daejeon">대전</option>
+	 		  	<option value="daegu">대구</option>
+	 		  	<option value="busan">부산</option>
+	 
+	 		 </select>
+	 		 <br>
+	 		 
+	 		 <input type="submit" value="학생정보 전송">
+	 
+	 </form>
+	 
+</body>
+</html>
